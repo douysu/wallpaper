@@ -1,25 +1,21 @@
-## MyWallPaper
-A project on Android 3D wallpaper （OpenGL ES）,the IDE is Android Studio2.4.1,the version is old,you can open this project with a higher version Android Studio.
+# 3D水族馆手机动态壁纸
+作者：憨豆酒（YinDou），yindou97@163.com，熟悉图形学，图像处理领域，经常更新的学习总结仓库：<https://github.com/ModestBean/person-summary> 如果对您有帮助还请帮忙点一个star，如果大家发现错误以及不合理之处，还希望多多指出。
 
-There are  some Swimming fish,these fish are divided into a single fish and fish school,the bule fish is single,the red fish and the orange is fish school .it use one AI(Artificial intellgence ) algorithm ,it is improtant  in this project.The background uses a texture rectangle,the fish model and the shell uses skeletal animation,i don't uses the FBX,use a custom bone animation.The project  involve some physics and 3D math.
+- [我的Github](https://github.com/ModestBean)
+- [我的技术CSDN](https://blog.csdn.net/ModestBean)
+- [我的个人博客](https://modestbean.github.io/)
 
-## Run Result
+# 介绍
 
-This gif is compressed,so it may not be very clear.
+运行结果如下图所示，有鱼群游动效果，加载多种3D鱼模型和骨骼动画。
 
 ![1](./result/result.gif)
 
-## AI Fish algorithm
+# 需要
 
-it simulate the real world,for example,speed,force and other Details,the picture can only vaguely introduce this algorithm,i omitted some details,can read the class from the folder--fish and fishschool.
-#### single fish algorithm
-![singlefish](./result/singlefish1.png)![singlefish](./result/singlefish2.png)
+- Android（目前高版本的可能不支持个人开发的动态壁纸）
+- OpenGL ES 3.0
 
-Use two fish to illustrate,fish A and fish B.Each fish has two attributes,speed and force.At first,the two fish are far away,the force is small,the distance between the two narrows,The force between the two becomes larger,it does not cause two fish to collide.
+# 运行
 
-So,at the beginning of the program,you should set the initial speed and the force is ok,when the fish encounter the wall,give the fish opposite force is ok.These parameters need to be experienced .
-
-####  fish school algorithm
-![fischool](./result/fishschool.png)
-
-The algorithm is similar to the single fish algorithm.the four fish are affected by the force of center fish ,you can think the center fish as a single fish .Of course ,the greater the  distance ,the greater the force .
+打开Android Studio->import project->run。运行成功后可在壁纸设置界面查看。
